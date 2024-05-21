@@ -1,0 +1,20 @@
+<p>component works!</p>
+<div class="buttons">
+    <button (click)="setRes1(1)">Click1</button>
+<button (click)="setRes1(2)">Click2</button>
+<button (click)="setRes1(3)">Click3</button>
+</div>
+
+<div class="main">
+    <div *ngIf="result==1">
+        <p>{{car | uppercase}}</p>
+    </div>
+    <div *ngIf="result==2">
+        <p>{{plane | slice:11:16}}</p>
+        <p>{{plane}}</p>
+    </div>
+    <div *ngIf="result==3">
+        
+        <p>{{ship | lowercase}}</p>
+    </div>
+</div>
